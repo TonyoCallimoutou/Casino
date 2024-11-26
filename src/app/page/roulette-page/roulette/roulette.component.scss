@@ -1,0 +1,35 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .bet_number {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(50px, auto);
+
+    .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 2px 3px black;
+    }
+  }
+
+  .amount_bet {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(50px, auto);
+
+    .choice {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 2px 3px black;
+    }
+  }
+}
+
+

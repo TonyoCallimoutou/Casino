@@ -1,0 +1,22 @@
+<div class="table">
+
+  <div class="bet_number">
+    <div
+      *ngFor="let number of numbers"
+      class="number"
+      (click)="betOnNumber(number.key)"
+    >
+      {{ number.value }}
+    </div>
+  </div>
+
+  <div class="amount_bet">
+    <div class="choice" *ngFor="let choice of choices" (click)="choiceAmount(choice)">
+      {{ choice }}
+    </div>
+  </div>
+
+  <button (click)="sendBet()">SEND BET</button>
+  <button (click)="deleteBet()">DELETE BET</button>
+
+</div>
